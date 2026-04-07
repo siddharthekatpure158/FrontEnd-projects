@@ -61,7 +61,11 @@
             padding: 50px;
         }
 
+        /* CARD AS LINK */
         .card {
+            display: block;
+            text-decoration: none;
+            color: white;
             background: rgba(255, 255, 255, 0.05);
             backdrop-filter: blur(10px);
             border-radius: 20px;
@@ -70,6 +74,8 @@
             position: relative;
             overflow: hidden;
             cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: bold;
             animation: fadeUp 0.8s ease forwards;
         }
 
@@ -78,6 +84,7 @@
             to { opacity: 1; transform: translateY(0); }
         }
 
+        /* Glow overlay */
         .card::before {
             content: "";
             position: absolute;
@@ -85,6 +92,7 @@
             background: linear-gradient(120deg, transparent, rgba(56,189,248,0.4), transparent);
             opacity: 0;
             transition: 0.5s;
+            pointer-events: none; /* IMPORTANT FIX */
         }
 
         .card:hover::before {
@@ -94,20 +102,6 @@
         .card:hover {
             transform: translateY(-10px) scale(1.03);
             box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        }
-
-        .card a {
-            text-decoration: none;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
-        }
-
-        .card span {
-            display: block;
-            margin-top: 10px;
-            font-size: 0.9rem;
-            color: #cbd5f5;
         }
 
         /* Responsive */
@@ -128,37 +122,14 @@
 
 <div class="container">
 
-    <div class="card">
-        <a href="./1/index.html">🚀 Project 1</a>
-    </div>
-
-    <div class="card">
-        <a href="./2/index.html">🚀 Project 2</a>
-    </div>
-
-    <div class="card">
-        <a href="./3/index.html">🚀 Project 3</a>
-    </div>
-
-    <div class="card">
-        <a href="./4/index.html">🚀 Project 4</a>
-    </div>
-
-    <div class="card">
-        <a href="./5/index.html">🚀 Project 5</a>
-    </div>
-
-    <div class="card">
-        <a href="./6/index.html">🚀 Project 6</a>
-    </div>
-
-    <div class="card">
-        <a href="./7/index.html">🚀 Project 7</a>
-    </div>
-
-    <div class="card">
-        <a href="./8/index.html">🚀 Project 8</a>
-    </div>
+    <a href="./1/index.html" class="card">🚀 Project 1</a>
+    <a href="./2/index.html" class="card">🚀 Project 2</a>
+    <a href="./3/index.html" class="card">🚀 Project 3</a>
+    <a href="./4/index.html" class="card">🚀 Project 4</a>
+    <a href="./5/index.html" class="card">🚀 Project 5</a>
+    <a href="./6/index.html" class="card">🚀 Project 6</a>
+    <a href="./7/index.html" class="card">🚀 Project 7</a>
+    <a href="./8/index.html" class="card">🚀 Project 8</a>
 
 </div>
 
