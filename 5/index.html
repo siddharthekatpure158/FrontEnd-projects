@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: whitesmoke;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        height: 60vh;
+        width: 22vw;
+        box-shadow: 0px 0px 1px black;
+        border-radius: 15px;
+    }
+    .upper{
+        height: 35%;
+        width: 100%;
+        background-color: black;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        display: flex;
+        justify-content: center;
+      
+
+    }
+    .image{
+        height:98%;
+        width: 50%;
+        background-color:black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        margin-top: 25px;
+
+    }
+
+.image img{
+     height: 9rem;
+     width: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+}
+.lower{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+.icon{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    width: 100%;
+    margin-top: 2%;
+
+}
+#facebook{
+    background-color: rgb(49, 49, 181);
+    height: 70%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+
+}
+#twit{
+    background-color: rgb(20, 129, 213);
+    height: 70%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+}
+#insta{
+    background-color: rgb(230, 14, 151);
+    height: 70%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+}
+#Yout{
+    background-color: rgb(233, 10, 10);
+    height: 70%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: white;
+    
+}
+.butt{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    margin-top: 5%;
+}
+.butt button{
+    height: 70%;
+    width: 30%;
+    background-color: #4070f4;
+    border-radius: 25px;
+    border: none;
+    color: white;
+
+}
+.para{
+    font-size: 20px;
+    font-weight: 500;
+}
+.footer{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 60px;
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+    <div class="card">
+        <div class="upper">
+            <div class="image">
+                <img src="profile.jpg" alt="">
+            </div>
+        </div>
+        <div class="lower">
+            <p class="para">Coding Lab</p>
+            <p>Youtuber & Blogger</p>
+            <div class="icon">
+                <i id="facebook" class="bx bxl-facebook"></i>
+                <i id="twit" class='bx bxl-twitter'></i>
+                <i id="insta" class='bx bxl-instagram' ></i>
+                <i id="Yout" class='bx bxl-youtube' ></i>
+            </div>
+            <div class="butt">
+                <button onclick="location.reload()">Subscribe</button>
+                <button>Message</button>
+            </div>
+        </div>
+        <div class="footer">
+            <i id="like" class='bx bx-heart'>60K</i>
+            <i id="comment" class='bx bx-comment' >25K</i>
+            <i id="shares" class='bx bx-share' >9K</i>
+        </div>
+
+    </div>
+</body>
+</html>

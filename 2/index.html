@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+body{
+    height: 100vh;
+    width:100vw;
+    background-color:rgb(27, 194, 147);
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height:30vmax ;
+    width: 25vmax;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px black;
+  
+    
+}
+.upper{
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(3, 121, 78);
+}
+.lower{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    
+
+}
+.username{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   
+}
+.user{
+height: 6vh;
+width: 20vw;
+border: 0.5px solid rgb(123, 110, 110);
+border-radius: 5px;
+padding-left: 20px ;
+color: rgb(43, 149, 110);
+outline: none;
+}
+
+
+@media(max-width:1262px){
+    .user{
+       
+        height:4vh;
+    }
+    .upper{
+        height:6vh;
+    }
+    butto{
+        height:vh;
+    }
+}
+.user:hover{
+border: 2.2px solid rgb(27, 194, 147);
+}
+#para{
+height: 15%;
+width: 100%;
+margin: 0.4em;
+color: rgb(43, 149, 110);
+margin-left: 2.5vw;
+
+}
+.lower button{
+height: 6vh;
+width: 20vw;
+border: 0.5px solid rgb(123, 110, 110);
+border-radius: 5px;
+background-color: rgb(43, 149, 110);
+margin: 2vh;
+color: white;
+font-size: 3vh;
+}
+.foot{
+display: flex;
+}
+.para1{
+color: rgb(43, 149, 110);
+margin-left:  3px;
+}
+    </style>
+ 
+</head>
+<body>
+    <div class="box">
+        <div class="upper">
+            <h1>Login Form</h1>
+        </div>
+        <div class="lower">
+            <div class="username">
+                <input type="text" id="check" placeholder="Email or Phone Number" class="user">
+                <input type="password" id="check" placeholder="Password" class="user">
+                
+            </div>
+            <p id="para">Forget Password?</p>
+            <button class="butto">Login</button>
+            <div class="foot">
+                <p>Not a member?</p>
+                <p class="para1">Signup Now</p>
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>

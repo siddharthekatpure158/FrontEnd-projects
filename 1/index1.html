@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0 ;
+            box-sizing: border-box;
+            color: white;
+        }
+        body{
+            height: 100vh;
+            width: 100%;
+            background-color:white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            height: 35%;
+            width: 30%;
+            background-image: url(bg.png);
+            background-size: cover;
+            border-radius: 25px;
+            margin-right: 100px;
+        }
+        .master{
+            height: 7vh;
+            width: 100%;
+            color: white;
+            display: flex;
+            margin-top: 25px;
+            justify-content: space-between;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+        .master img{
+            height: 6vh;
+            width: 5vw;
+        }
+        .master p{
+            font-size: 23px;
+            position: relative;
+            top: 10px;
+            right: 60px;
+        }
+        .cardnum{
+            height: 8vh;
+            width: 100%;
+            position: relative;
+            left: 40px;
+            top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .para{
+            font-size: 25px;
+        }
+        .foot{
+            position: relative;
+            top: 60px;
+            left: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .date{
+            position: relative;
+            bottom: 25px;
+            right: 80px;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+    </style>
+</head>
+<body>
+ <div class="card">
+        <div class="master">
+            <img src="logo.png" alt="">
+            <p>Master Card</p>
+            <img src="chip.png" alt="">
+        </div>
+        <div class="cardnum">
+            <p>Card Number</p>
+            <p class="para">8010  3456  4455  7709</p>
+        </div>
+        <div class="foot">
+            <p style="font-size:20px;">Ved Vardhan Sahani</p>
+            <div class="date">
+                <p>Valid Thru</p>
+                <p style="font-size: 20px;">10/28</p>
+            </div>
+         
+        </div>
+ </div>
+<script src="app.js"></script>
+</body>
+</html>

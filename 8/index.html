@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            color: black;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        html,body{
+            height: 100vh;
+            width: 100vw;
+            overflow-x:  hidden;
+        }
+        .page1{
+            height: 100%;
+            width: 100%;
+            border-bottom: 5px solid rgba(128, 128, 128, 0.071);
+        }
+        .navbar{
+            height: 10%;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            border-bottom: 5px solid rgba(128, 128, 128, 0.071);
+            column-gap: 50vw;
+        }
+        .img2{
+            height: 80%;
+            margin-top: 0.5%;
+        }
+        .hero-section{
+            height: 90%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .left{
+            width: 50%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+
+        }
+        .right{
+            width: 50%;
+            height: 80%;
+            padding-top:5%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 10%;
+        }
+        .right h1{
+            font-size: 110px;
+            line-height: 60%;
+        }
+        .green{
+            height: 5%;
+            width: 20%;
+            background-color: rgba(38, 211, 38, 0.877);
+            display: flex;
+            align-items: center;
+        }
+        .green p{
+            color: white;
+        }
+        button{
+            height: 10%;
+            width: 12%;
+            background-color: rgba(255, 140, 0, 0.799);
+            border: none;
+
+        }
+        .features{
+            height: 10%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 5vw;        }
+        .image1{
+            display: flex;
+            column-gap: 10px;
+            height: 50%;
+            width: 25%;
+        }
+        .image2{
+            display: flex;
+            column-gap: 10px;
+            height: 50%;
+            width: 25%;
+        }
+        .image3{
+            display: flex;
+            column-gap: 10px;
+            height: 50%;
+            width: 30%;
+        }
+        .main{
+            display: flex;
+            height: 80%;
+            width: 100%;
+        }
+        .left img{
+            height: 100%;
+            width: 60%;
+        }
+        .page2{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .page2 p{
+            padding-top: 30px;
+            font-size: 40px;
+        }
+        .grid{
+            height: 100%;
+            width: 100%;
+            display: grid;
+            margin-top: 20px;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,1fr);
+        }
+        #box1{
+            height: 90%;
+            width: 90%;
+            background-image: url(grid_image1.png);
+            background-size: cover;
+            background-position: center;
+            grid-column: 1/3;
+            grid-row: 1/3;
+
+        }
+        #box2{
+            height: 90%;
+            width: 90%;
+            background-image: url(grid_image2.png);
+            background-size: cover;
+            background-position: center;
+            grid-row: 1/3;
+
+
+        }
+        #box3{
+
+            background-image: url(grid_image3.png);
+            background-size: cover;
+            background-position: center;
+            height: 90%;
+            width: 90%;
+
+        }
+        #box4{
+
+            background-image: url(grid_image4.png);
+            background-size: cover;
+            background-position: center;
+            height: 90%;
+            width: 90%;
+            grid-row: 2/4;
+        }
+        #box5{
+
+            background-image: url(grid_image5.png);
+            background-size: cover;
+            background-position: center;
+            height: 90%;
+            width: 90%;
+
+        }
+        #box6{
+
+            background-image: url(grid_image6.png);
+            background-size: cover;
+            background-position: center;
+            height: 90%;
+            width: 90%;
+        }
+#box7{
+            background-image: url(grid_image7.png);
+            background-size: cover;
+            background-position: center;
+            height: 90%;
+            width: 90%;
+         
+        }
+    </style>
+</head>
+<body>
+   <div class="page1">
+    <div class="navbar">
+        <img class="img1" src="logo.png" alt="">
+        <img class="img2" src="nav.svg" alt="">
+    </div>
+    <div class="hero-section">
+      <div class="main">
+        <div class="left">
+            <img src="hero_image.png" alt="">
+        </div>
+        <div class="right">
+            <div class="green">
+                <p>50% off on All Products</p>
+            </div>
+            <h1>Enjoy Your </h1>
+            <h1>Delicious Food</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam aliquid optio, accusamus molestias facere dignissimos placeat cum ipsa ad? Deleniti, nostrum consequuntur? Tempora eveniet doloribus voluptate in fugiat odit alias.</p>
+            <button>Explore Now</button>
+        </div>
+      </div>
+        <div class="features">
+            <div class="image1">
+                <img src="discount.png" alt="">
+                <div class="text">
+                    <h1>Discount Voucher</h1>
+                    <p>discount Lorem ipsum, dolor sit amet discount Lorem ipsum, dolor sit amet</p>
+                </div>
+            </div>
+            <div class="image2">
+                <img src="fresh.png" alt="">
+                <div class="text1">
+                    <h1>Fresh Healthy Food</h1>
+                    <p>discount Lorem ipsum, dolor sit amet discount Lorem ipsum, dolor sit amet </p>
+                </div>
+            </div>
+            <div class="image3">
+                <img src="delivery.png" alt="">
+                <div class="text2">
+                    <h1>Fast Home Delivery</h1>
+                    <p>discount Lorem ipsum, dolor sit amet discount Lorem ipsum, dolor sit amet </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   </div>
+   <div class="page2">
+    <p>Explore Our Menu</p>
+        <div class="grid">
+            <div class="boxes" id="box1"></div>
+            <div class="boxes" id="box2"></div>
+            <div class="boxes" id="box3"></div>
+            <div class="boxes" id="box4"></div>
+            <div class="boxes" id="box5"></div>
+            <div class="boxes" id="box6"></div>
+            <div class="boxes" id="box7"></div>
+        </div>
+   </div>
+   <script>
+    let nav=document.querySelector(".navbar");
+    let page1=document.querySelector(".page1");
+    let main=document.querySelector(".main")
+
+    val=0;
+
+    page1.addEventListener('click',()=>{
+        if (val==0) {
+            main.style.cssText="background-color:grey";
+            nav.style.cssText=" border-bottom: 3px solid rgba(1,1,1,0.2);";
+            val=1;
+        }
+        
+
+
+        else{
+            main.style.cssText="background-color:white";
+            nav.style.cssText=" border-bottom: 5px solid rgba(128, 128, 128, 0.071);";
+            val=0;
+        }
+    })
+   </script>
+</body>
+</html>

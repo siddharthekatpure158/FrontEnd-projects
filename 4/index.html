@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+     
+
+        }
+        .main{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            background-color: rgba(191, 11, 223, 0.108);
+        }
+
+        .text{
+            width: 100%;
+            font-family:fantasy;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            list-style: 1.6px;
+            text-align: center;
+            z-index: 102;
+            position: relative;
+            
+        }
+
+        .brand1{
+            z-index: 100;
+            display: flex;
+            font-size: 90px;
+            text-transform: uppercase;
+            animation: scrol 5s linear infinite ;
+            position: relative;
+            top: 5%;
+        } 
+
+
+        @keyframes scrol{
+            from{
+                transform: translateX(-100%);
+            }
+            to{
+                transform: translateX(100%);
+            }
+            
+        }   
+     
+        @keyframes scro{
+            from{
+                left: -100%;
+            }
+            to{
+                left: 100%;
+            }
+        }
+           .brand3{
+            z-index: 100;
+            display: flex;
+            overflow: hidden;
+            font-size: 90px;
+            text-transform: uppercase;
+            animation: scrol 5s linear infinite reverse ;
+            position: relative;
+            bottom: 3%;
+            
+        } 
+        @keyframes scro{
+            from{
+                left: -100%;
+            }
+            to{
+                left: 100%;
+            }
+        }
+        
+.main img{
+    height: 80%;
+    width: 27%;
+    background-size: cover;
+    position: absolute;
+    z-index: 101;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <img src="wesley-tingey-JOhjfzjeJLw-unsplash.jpg" alt="">
+        <div class="text">
+            <h2>we're content creation team and we're</h2>
+            <h2>going to make some cool stuff for your</h2>
+        </div>
+
+     
+       
+                    <div class="brand1">
+                        <h1>brand</h1>
+                        <h1>brand</h1>
+                        <h1>brand</h1>
+                    </div>
+                       
+                    <!-- <div class="brand2">
+                        <h1>brand</h1>
+                        <h1>brand</h1>
+                        <h1>brand</h1>
+                    </div> -->
+                    <div class="brand3">
+                        <h1>brand</h1>
+                        <h1>brand</h1>
+                        <h1>brand</h1>
+                    </div>
+
+
+            
+   
+    </div>
+
+</body>
+</html>
